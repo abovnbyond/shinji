@@ -123,19 +123,19 @@
     right: 0px;
 }
 
-
 .xbox .abxy {
     position: absolute;
-    background-repeat: no-repeat;
+    width: 800px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
 }
 
 .xbox .button {
-    position: absolute;
-}
-
-.xbox .button.pressed {
-    background-position-y: -00px;
-    margin-top: 0px;
+    /*position: absolute;
+    /* background: url(xbox-assets/abxy.svg); */
+    width: 800px;
+    height: 600px;
 }
 
 .xbox .a {
