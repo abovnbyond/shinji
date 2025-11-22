@@ -26,9 +26,6 @@
     width: 800px;
     background: url(LT.png);
     position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 .xbox .trigger.right {
@@ -37,18 +34,18 @@
 }
 
 .xbox .bumper {
-    width: 170px;
-    height: 61px;
-    background: url(xbox-assets/bumper.svg);
+    width: 800px;
+    height: 600px;
+    background: url(LB.png);
     opacity: 0;
 }
 
 .xbox .bumpers {
     position: absolute;
-    width: 536px;
-    height: 61px;
-    left: 107px;
-    top: 129px;
+    width: 800px;
+    height: 600px;
+    left: 0px;
+    top: 0px;
 }
 
 .xbox .bumper.pressed {
