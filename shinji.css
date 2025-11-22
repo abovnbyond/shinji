@@ -8,14 +8,16 @@
 
 .xbox .triggers {
     position: absolute;
+    width: 800px;
+    height: 600px;
+    left: 0px;
+    top: 0px;
     background-repeat: no-repeat;
 }
 
 .xbox .trigger {
     width: 800px;
     height: 600px;
-    left: 0px;
-    top: 0px;
     background-repeat: no-repeat;
 }
 
@@ -24,6 +26,7 @@
     height: 600px;
     background: url(LT.png);
     position: absolute;
+    background-repeat: no-repeat;
 }
 
 .xbox .trigger.right {
@@ -31,14 +34,9 @@
     height: 600px;
     background: url(RT.png);
     position: absolute;
+    background-repeat: no-repeat;
 }
 
-.xbox .bumper {
-    width: 800px;
-    height: 600px;
-    background: url(LB.png);
-    opacity: 0;
-}
 
 .xbox .bumpers {
     position: absolute;
@@ -46,6 +44,11 @@
     height: 600px;
     left: 0px;
     top: 0px;
+    background-repeat: no-repeat;
+}
+
+.xbox .bumper {
+    opacity: 0;
 }
 
 .xbox .bumper.pressed {
@@ -53,13 +56,19 @@
 }
 
 .xbox .bumper.left {
-    float: left;
+    width: 800px;
+    height: 600px;
+    background: url(LB.png);
+    position: absolute;
+    background-repeat: no-repeat;
 }
 
 .xbox .bumper.right {
-    float: right;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    width: 800px;
+    height: 600px;
+    background: url(RB.png);
+    position: absolute;
+    background-repeat: no-repeat;
 }
 
 .xbox .quadrant {
