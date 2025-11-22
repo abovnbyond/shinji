@@ -35,6 +35,7 @@
 
 .xbox .trigger.right {
     background: url(RT.png);
+    transform: none !important;
     background-repeat: no-repeat;
 }
 
@@ -68,6 +69,7 @@
 
 .xbox .bumper.right {
     background: url(RB.png);
+    transform: none !important;
     background-repeat: no-repeat;
 }
 
