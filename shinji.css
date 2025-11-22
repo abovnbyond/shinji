@@ -3,40 +3,43 @@
     background: url(evangelionv2.gif);
     width: 800px;
     height: 600px;
-    left: 0px;
-    top: 0px;
-    background-repeat : no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain; /* Add this to fit GIF properly */
+    background-position: center; /* Add this to center the GIF */
+    position: relative; /* Needed for absolute children positioning */
 }
 
 .xbox .triggers {
     position: absolute;
-    width: 800px;
-    height: 600px;
+    width: 100%; /* Use percentage instead of fixed */
+    height: 100%;
     left: 0px;
     top: 0px;
-    background-repeat: no-repeat;
 }
 
 .xbox .trigger {
-    width: 800px;
+    width: 800px; /* Or use smaller dimensions */
     height: 600px;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
 }
 
 .xbox .trigger.left {
-    width: 800px;
-    height: 600px;
     background: url(LT.png);
-    position: absolute;
-    background-repeat: no-repeat;
+    /* Position left trigger on left side */
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .xbox .trigger.right {
-    width: 800px;
-    height: 600px;
     background: url(RT.png);
-    position: absolute;
-    background-repeat: no-repeat;
+    /* Position right trigger on right side */
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
