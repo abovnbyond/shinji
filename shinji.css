@@ -1,30 +1,30 @@
 /*BEGIN Xbox One Controller Styling*/
 .controller.xbox {
     background: url(evangelionv2.gif);
-    height: 800px;
-    width: 600px;
+    height: 600px;
+    width: 800px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .xbox .triggers {
-    width: 446px;
-    height: 121px;
     position: absolute;
-    left: 152px;
+    background-repeat: no-repeat;
 }
 
 .xbox .trigger {
-    width: 88px;
-    height: 121px;
-    background: url(xbox-assets/trigger.svg);
-    opacity: 0;
+    height: 1000px;
+    width: 2000px;
+    background-repeat: no-repeat;
 }
 
 .xbox .trigger.left {
-    float: left;
-    background-position: 0 0;
+    height: 600px;
+    width: 800px;
+    background: url(LT.png);
+    position: absolute;
+    background-repeat: no-repeat;
 }
 
 .xbox .trigger.right {
