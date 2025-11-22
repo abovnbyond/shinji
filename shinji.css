@@ -3,19 +3,9 @@
     background: url(evangelionv2.gif);
     height: 800px;
     width: 600px;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-}
-
-.xbox.white {
-    background: url(xbox-assets/base-white.svg);
-}
-
-.xbox.disconnected {
-    background: url(xbox-assets/disconnected.svg);
-}
-
-.xbox.disconnected div {
-    display: none;
 }
 
 .xbox .triggers {
