@@ -189,8 +189,8 @@
     position: absolute;
 }
 
-.xbox .stick.pressed.right {
-    background: url(RS.png);
+.xbox .stick.pressed.left {
+    background: url(LS.png);
     width: 800px;
     height: 600px;
     top: 0px;
@@ -198,7 +198,7 @@
 }
 
 .xbox .stick.pressed.right {
-    background: url(LS.png);
+    background: url(RS.png);
     width: 800px;
     height: 600px;
     top: 0px;
