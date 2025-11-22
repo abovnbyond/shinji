@@ -11,8 +11,8 @@
 
 .xbox .triggers {
     position: absolute;
-    width: 100%; /* Use percentage instead of fixed */
-    height: 100%;
+    width: 800px; /* Use fixed width */
+    height: 600px; /* Use fixed height */
     left: 0px;
     top: 0px;
 }
@@ -45,8 +45,8 @@
 
 .xbox .bumpers {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 800px;
+    height: 600px;
     left: 0px;
     top: 0px;
 }
