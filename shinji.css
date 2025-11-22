@@ -3,6 +3,7 @@
     background: url(evangelionv2.gif);
     height: 800px;
     width: 600px;
+    background-repeat: no-repeat;
 }
 
 .xbox.white {
