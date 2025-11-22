@@ -96,11 +96,11 @@
 }
 
 .xbox .stick.left {
-    background: url(LEFT_STICK.png); /* Your left stick image */
+    background: url(LSidle.png); /* Your left stick image */
 }
 
 .xbox .stick.right {
-    background: url(RIGHT_STICK.png); /* Your right stick image */
+    background: url(RSidle.png); /* Your right stick image */
 }
 
 /* D-pad */
@@ -114,16 +114,16 @@
 }
 
 .xbox .face.up {
-    background: url(DPAD_UP.png);
+    background: url(Up.png);
 }
 .xbox .face.down {
-    background: url(DPAD_DOWN.png);
+    background: url(Down.png);
 }
 .xbox .face.left {
-    background: url(DPAD_LEFT.png);
+    background: url(Left.png);
 }
 .xbox .face.right {
-    background: url(DPAD_RIGHT.png);
+    background: url(Right.png);
 }
 
 /* Start/Select buttons */
@@ -137,11 +137,11 @@
 }
 
 .xbox .back {
-    background: url(SELECT.png);
+    background: url(Select.png);
 }
 
 .xbox .start {
-    background: url(START.png);
+    background: url(Start.png);
 }
 
 /* Pressed states - optional if you have pressed versions */
