@@ -108,11 +108,19 @@
 }
 
 .xbox .back {
-    float: left;
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
 }
 
 .xbox .start {
-    float: right;
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    top: 0px;
+    right: 0px;
 }
 
 .xbox .abxy {
