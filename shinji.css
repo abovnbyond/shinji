@@ -11,12 +11,16 @@
 .xbox .triggers {
     position: absolute;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .xbox .trigger {
     height: 1000px;
     width: 2000px;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .xbox .trigger.left {
@@ -25,6 +29,8 @@
     background: url(LT.png);
     position: absolute;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .xbox .trigger.right {
