@@ -264,4 +264,9 @@
     background: no-repeat center;
 }
 
+.xbox .quadrant {
+    position: absolute;
+    background: url();
+}
+
 /*END Xbox One Controller Styling*/
