@@ -1,13 +1,13 @@
-/*BEGIN Xbox One Controller Styling*/
+/*BEGIN Xbox One Controller Styling - Simple Stacking Version*/
 .controller.xbox {
     background: url(evangelionv2.gif);
-    height: 800px;
-    width: 600px;
+    height: 600px;
+    width: 800px;
     position: relative;
     margin: 0 auto;
 }
 
-/* Make ALL button containers visible and properly sized */
+/* All button containers stack perfectly */
 .xbox .triggers,
 .xbox .bumpers,
 .xbox .abxy,
@@ -21,130 +21,44 @@
     left: 0;
 }
 
-/* Trigger buttons - full size images */
-.xbox .trigger {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    opacity: 1; /* Make visible */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.xbox .trigger.left {
-    background: url(LT.png);
-}
-
-.xbox .trigger.right {
-    background: url(RT.png);
-    transform: none; /* Remove flip */
-}
-
-/* Bumper buttons */
-.xbox .bumper {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    opacity: 1; /* Make visible */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.xbox .bumper.left {
-    background: url(LB.png); /* Your left bumper image */
-}
-
-.xbox .bumper.right {
-    background: url(RB.png); /* Your right bumper image */
-    transform: none;
-}
-
-/* ABXY buttons - each as full 800x600 images */
-.xbox .button {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    opacity: 1; /* Make visible */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.xbox .a {
-    background: url(A.png); /* Your A button image */
-}
-
-.xbox .b {
-    background: url(B.png); /* Your B button image */
-}
-
-.xbox .x {
-    background: url(X.png); /* Your X button image */
-}
-
-.xbox .y {
-    background: url(Y.png); /* Your Y button image */
-}
-
-/* Stick controls */
-.xbox .stick {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    opacity: 1; /* Make visible */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.xbox .stick.left {
-    background: url(LSidle.png); /* Your left stick image */
-}
-
-.xbox .stick.right {
-    background: url(RSidle.png); /* Your right stick image */
-}
-
-/* D-pad */
-.xbox .face {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    opacity: 1; /* Make visible */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.xbox .face.up {
-    background: url(Up.png);
-}
-.xbox .face.down {
-    background: url(Down.png);
-}
-.xbox .face.left {
-    background: url(Left.png);
-}
-.xbox .face.right {
-    background: url(Right.png);
-}
-
-/* Start/Select buttons */
-.xbox .back, .xbox .start {
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    opacity: 1; /* Make visible */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.xbox .back {
-    background: url(Select.png);
-}
-
+/* All buttons are full 800x600 images stacked on top */
+.xbox .trigger,
+.xbox .bumper,
+.xbox .button,
+.xbox .stick,
+.xbox .face,
+.xbox .back,
 .xbox .start {
-    background: url(Start.png);
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Pressed states - optional if you have pressed versions */
+/* Individual button images */
+.xbox .trigger.left { background: url(LT.png); }
+.xbox .trigger.right { background: url(RT.png); }
+.xbox .bumper.left { background: url(LB.png); }
+.xbox .bumper.right { background: url(RB.png); }
+.xbox .a { background: url(A.png); }
+.xbox .b { background: url(B.png); }
+.xbox .x { background: url(X.png); }
+.xbox .y { background: url(Y.png); }
+.xbox .stick.left { background: url(LSidle.png); }
+.xbox .stick.right { background: url(RSidle.png); }
+.xbox .face.up { background: url(Up.png); }
+.xbox .face.down { background: url(Down.png); }
+.xbox .face.left { background: url(Left.png); }
+.xbox .face.right { background: url(Right.png); }
+.xbox .back { background: url(Select.png); }
+.xbox .start { background: url(Start.png); }
+
+/* Pressed states */
 .xbox .button.pressed,
 .xbox .bumper.pressed,
 .xbox .trigger.pressed,
@@ -152,14 +66,6 @@
 .xbox .face.pressed,
 .xbox .back.pressed,
 .xbox .start.pressed {
-    opacity: 0.7; /* Slight transparency when pressed */
+    opacity: 0.7;
 }
-
-/* Remove all the old positioning - we need new positioning */
-.xbox .a { top: 0; left: 0; }
-.xbox .b { top: 0; left: 0; }
-.xbox .x { top: 0; left: 0; }
-.xbox .y { top: 0; left: 0; }
-/* You'll need to add proper positioning for each button */
-
 /*END Xbox One Controller Styling*/
