@@ -1,210 +1,220 @@
 /*BEGIN xbox shinji Controller Styling*/
-.xbox shinji {
+.controller.xbox {
     background: url(evangelionv2.gif);
     height: 800px;
     width: 600px;
-    background-repeat: no-repeat;
 }
 
-.xbox shinji .triggers {
+.xbox.disconnected {
+    background: url(disconnected.png);
+}
+
+.xbox.disconnected div {
+    display: none;
+}
+
+.xbox .triggers {
+    height: 800px;
+    width: 600px;
     position: absolute;
-    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
 }
 
-.xbox shinji .trigger {
+.xbox .trigger {
     height: 800px;
     width: 600px;
-    background-repeat: no-repeat;
+    opacity: 0;
+    position: absolute;
 }
 
-.xbox shinji .trigger.left {
-    height: 800px;
-    width: 600px;
+.xbox .trigger.left {
     background: url(LT.png);
-    position: absolute;
     background-repeat: no-repeat;
 }
 
-.xbox shinji .trigger.right {
-    height: 800px;
-    width: 600px;
+.xbox .trigger.right {
     background: url(RT.png);
-    position: absolute;
     background-repeat: no-repeat;
 }
 
-.xbox shinji .bumper {
-    opacity: 0;
-}
-
-.xbox shinji .bumper.pressed {
+.xbox .trigger.pressed {
     opacity: 1;
 }
 
-.xbox shinji .bumper.right {
+.xbox .bumper {
+    opacity: 0;
     height: 800px;
     width: 600px;
-    background: url(RB.png);
     position: absolute;
-    background-repeat: no-repeat;
 }
 
-.xbox shinji .bumper.left {
+.xbox .bumpers {
+    position: absolute;
     height: 800px;
     width: 600px;
+    left: 0;
+    top: 0;
+}
+
+.xbox .bumper.pressed {
+    opacity: 1;
+}
+
+.xbox .bumper.left {
     background: url(LB.png);
-    position: absolute;
     background-repeat: no-repeat;
 }
 
-.xbox shinji .arrows {
+.xbox .bumper.right {
+    background: url(RB.png);
+    background-repeat: no-repeat;
+}
+
+.xbox .arrows {
     position: absolute;
     height: 800px;
     width: 600px;
-    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
 }
 
-.xbox shinji .back {
+.xbox .back, .xbox .start {
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 600px;
     opacity: 0;
     position: absolute;
 }
 
-.xbox shinji .start {
-    opacity: 0;
-    position: absolute;
+.xbox .back.pressed, .xbox .start.pressed {
+    opacity: 1;
 }
 
-.xbox shinji .back.pressed {
-    height: 800px;
-    width: 600px;
+.xbox .back {
     background: url(Share.png);
-    position: absolute;
-    opacity: 1;
 }
 
-.xbox shinji .start.pressed {
-    height: 800px;
-    width: 600px;
+.xbox .start {
     background: url(Options.png);
+}
+
+.xbox .abxy {
+    position: absolute;
+    height: 800px;
+    width: 600px;
+    top: 0;
+    left: 0;
+}
+
+.xbox .button {
+    position: absolute;
+    height: 800px;
+    width: 600px;
+    opacity: 0;
+}
+
+.xbox .button.pressed {
     opacity: 1;
 }
 
-.xbox shinji .abxy {
-    position: absolute;
-    background-repeat: no-repeat;
-}
-
-.xbox shinji .button {
-    position: absolute;
-}
-
-.xbox shinji .button.pressed {
-    background-position-y: 0px;
-    margin-top: 0px;
-}
-
-.xbox shinji .a.pressed {
+.xbox .a {
     background: url(A.png);
-    height: 800px;
-    width: 600px;
     background-repeat: no-repeat;
 }
 
-.xbox shinji .b.pressed {
+.xbox .b {
     background: url(B.png);
-    height: 800px;
-    width: 600px;
     background-repeat: no-repeat;
 }
 
-.xbox shinji .x.pressed {
+.xbox .x {
     background: url(X.png);
-    height: 800px;
-    width: 600px;
     background-repeat: no-repeat;
 }
 
-.xbox shinji .y.pressed {
+.xbox .y {
     background: url(Y.png);
+    background-repeat: no-repeat;
+}
+
+.xbox .sticks {
+    position: absolute;
     height: 800px;
     width: 600px;
-    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
 }
 
-.xbox shinji .sticks {
-    left: 200px;
-    top: 240px;
+.xbox .stick {
     position: absolute;
-    background-repeat: no-repeat;
+    height: 800px;
+    width: 600px;
+    opacity: 0;
 }
 
-.xbox shinji .stick {
-    position: absolute;
+.xbox .stick.pressed {
+    opacity: 1;
 }
 
-.xbox shinji .stick.pressed.left {
-    position: absolute;
+.xbox .stick.left {
     background: url(LS.png);
-    height: 800px;
-    width: 600px;
     background-repeat: no-repeat;
 }
 
-.xbox shinji .stick.pressed.right {
-    position: absolute;
+.xbox .stick.right {
     background: url(RS.png);
-    height: 800px;
-    width: 600px;
     background-repeat: no-repeat;
 }
 
-.xbox shinji .stick.left {
-    position: absolute;
+.xbox .stick.left.idle {
     background: url(LSidle.png);
-    height: 800px;
-    width: 600px;
     background-repeat: no-repeat;
+    opacity: 1;
 }
 
-.xbox shinji .stick.right {
-    position: absolute;
+.xbox .stick.right.idle {
     background: url(RSidle.png);
-    height: 800px;
-    width: 600px;
     background-repeat: no-repeat;
+    opacity: 1;
 }
 
-.xbox shinji .dpad {
+.xbox .dpad {
+    position: absolute;
     height: 800px;
     width: 600px;
-    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
 }
 
-.xbox shinji .face.right.pressed {
-    background: url(Right.png);
+.xbox .face {
+    position: absolute;
     height: 800px;
     width: 600px;
-    background-repeat: no-repeat;
+    opacity: 0;
 }
 
-.xbox shinji .face.left.pressed {
-    background: url(Left.png);
-    height: 800px;
-    width: 600px;
-    background-repeat: no-repeat;
+.xbox .face.pressed {
+    opacity: 1;
 }
 
-.xbox shinji .face.up.pressed {
+.xbox .face.up {
     background: url(Up.png);
-    height: 800px;
-    width: 600px;
     background-repeat: no-repeat;
 }
 
-.xbox shinji .face.down.pressed {
+.xbox .face.down {
     background: url(Down.png);
-    height: 800px;
-    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox .face.left {
+    background: url(Left.png);
+    background-repeat: no-repeat;
+}
+
+.xbox .face.right {
+    background: url(Right.png);
     background-repeat: no-repeat;
 }
 
