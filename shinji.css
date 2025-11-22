@@ -52,6 +52,9 @@
 }
 
 .xbox .bumper {
+    position: absolute;
+    width: 800px;
+    height: 600px;
     opacity: 0;
 }
 
