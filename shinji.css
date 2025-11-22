@@ -76,48 +76,27 @@
     transform: translateY(-50%);
 }
 
-.xbox .quadrant {
+.xbox .arrows
+ {
     position: absolute;
-    background: url(xbox-assets/quadrant.svg);
-    height: 45px;
-    width: 45px;
-    top: 258px;
-    left: 354px;
-    z-index: 0;
+    width: 800px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
 }
 
-.xbox .p0 {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+.xbox .back {
+    background: url(Select.png);
+    width: 800px;
+    height: 600px;
+    opacity: 0;
 }
 
-.xbox .p1 {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
 
-.xbox .p2 {
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
-}
-
-.xbox .p3 {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-.xbox .arrows {
-    position: absolute;
-    width: 141px;
-    height: 33px;
-    top: 264px;
-    left: 306px;
-}
-
-.xbox .back, .xbox .start {
-    background: url(xbox-assets/start-select.svg);
-    width: 33px;
-    height: 33px;
+.xbox .start {
+    background: url(Start.png);
+    width: 800px;
+    height: 600px;
     opacity: 0;
 }
 
