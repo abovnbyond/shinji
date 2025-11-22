@@ -76,40 +76,43 @@
     transform: translateY(-50%);
 }
 
-/* Fix back/start buttons */
-.xbox .arrows {
+.xbox .arrows
+ {
     position: absolute;
-    width: 300px; /* Smaller container */
-    height: 50px;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%);
-}
-
-.xbox .back, .xbox .start {
-    position: absolute;
-    width: 80px; /* Much smaller */
-    height: 80px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    opacity: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 800px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
 }
 
 .xbox .back {
     background: url(Select.png);
-    left: 0; /* Left side of arrows container */
+    width: 800px;
+    height: 600px;
+    opacity: 0;
 }
 
 .xbox .start {
     background: url(Start.png);
-    right: 0; /* Right side of arrows container */
+    width: 800px;
+    height: 600px;
+    opacity: 0;
 }
 
-.xbox .back.pressed, .xbox .start.pressed {
+.xbox .back.pressed {
     opacity: 1;
+}
+
+.xbox .start.pressed {
+    opacity: 1;
+}
+
+.xbox .back {
+    float: left;
+}
+
+.xbox .start {
+    float: right;
 }
 
 .xbox .abxy {
