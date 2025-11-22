@@ -9,259 +9,196 @@
     margin: 0 auto;
 }
 
-.xbox .triggers {
-    width: 800px;
-    height: 600px;
+/* Make all button containers visible and properly positioned */
+.xbox .triggers,
+.xbox .bumpers,
+.xbox .abxy,
+.xbox .sticks,
+.xbox .dpad,
+.xbox .arrows {
     position: absolute;
-    left: 0;
+    width: 100%;
+    height: 100%;
     top: 0;
+    left: 0;
+    pointer-events: none;
 }
 
+/* Trigger buttons */
 .xbox .trigger {
-    width: 100px;
-    height: 200px;
+    width: 80px;
+    height: 120px;
     position: absolute;
-    opacity: 1;
+    opacity: 0.8;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .xbox .trigger.left {
     background: url(LT.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 50px;
-    left: 150px;
+    top: 20px;
+    left: 200px;
 }
 
 .xbox .trigger.right {
     background: url(RT.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 50px;
-    right: 150px;
+    top: 20px;
+    right: 200px;
     transform: none;
 }
 
+/* Bumper buttons */
 .xbox .bumper {
-    width: 200px;
-    height: 50px;
-    background: url(xbox-assets/bumper.svg);
-    opacity: 1;
+    width: 150px;
+    height: 40px;
     position: absolute;
-}
-
-.xbox .bumpers {
-    position: absolute;
-    width: 800px;
-    height: 600px;
-    left: 0;
-    top: 0;
-}
-
-.xbox .bumper.pressed {
-    opacity: 1;
+    opacity: 0.8;
+    background: #333;
+    border-radius: 5px;
 }
 
 .xbox .bumper.left {
-    top: 100px;
-    left: 150px;
+    top: 80px;
+    left: 200px;
 }
 
 .xbox .bumper.right {
-    top: 100px;
-    right: 150px;
-    transform: none;
+    top: 80px;
+    right: 200px;
 }
 
-.xbox .quadrant {
-    position: absolute;
-    background: url(xbox-assets/quadrant.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    top: 200px;
-    left: 350px;
-    z-index: 0;
-}
-
-.xbox .p0 {
-    transform: rotate(0deg);
-}
-
-.xbox .p1 {
-    transform: rotate(90deg);
-}
-
-.xbox .p2 {
-    transform: rotate(270deg);
-}
-
-.xbox .p3 {
-    transform: rotate(180deg);
-}
-
-.xbox .arrows {
-    position: absolute;
-    width: 800px;
-    height: 600px;
-    top: 200px;
-    left: 0;
-}
-
-.xbox .back, .xbox .start {
-    background: url(xbox-assets/start-select.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    opacity: 1;
-    position: absolute;
-}
-
-.xbox .back.pressed, .xbox .start.pressed {
-    opacity: 1;
-}
-
-.xbox .back {
-    top: 250px;
-    left: 300px;
-}
-
-.xbox .start {
-    top: 250px;
-    right: 300px;
-    background-position: center;
-}
-
-.xbox .abxy {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 150px;
-    right: 100px;
-}
-
+/* ABXY buttons */
 .xbox .button {
-    position: absolute;
-    background: url(xbox-assets/abxy.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 60px;
     height: 60px;
-}
-
-.xbox .button.pressed {
-    opacity: 1;
+    position: absolute;
+    opacity: 0.8;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #000;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .xbox .a {
-    background-position: 0 0;
-    bottom: 0;
-    left: 70px;
+    background: rgba(255, 0, 0, 0.7);
+    bottom: 120px;
+    right: 180px;
 }
+.xbox .a:after { content: "A"; }
 
 .xbox .b {
-    background-position: -49px 0;
-    top: 0;
-    right: 0;
+    background: rgba(0, 0, 255, 0.7);
+    top: 120px;
+    right: 120px;
 }
+.xbox .b:after { content: "B"; }
 
 .xbox .x {
-    background-position: -98px 0;
-    top: 0;
-    left: 0;
+    background: rgba(0, 255, 0, 0.7);
+    top: 120px;
+    right: 240px;
 }
+.xbox .x:after { content: "X"; }
 
 .xbox .y {
-    background-position: 48px 0;
-    top: 0;
-    left: 70px;
+    background: rgba(255, 255, 0, 0.7);
+    top: 60px;
+    right: 180px;
 }
+.xbox .y:after { content: "Y"; }
 
-.xbox .sticks {
-    position: absolute;
-    width: 800px;
-    height: 600px;
-    top: 200px;
-    left: 100px;
-}
-
+/* Stick controls */
 .xbox .stick {
-    position: absolute;
-    background: url(xbox-assets/stick.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 80px;
     width: 80px;
-}
-
-.xbox .stick.pressed {
-    opacity: 1;
+    height: 80px;
+    position: absolute;
+    opacity: 0.8;
+    border-radius: 50%;
+    background: rgba(100, 100, 100, 0.7);
+    border: 2px solid #000;
 }
 
 .xbox .stick.left {
-    top: 50px;
-    left: 150px;
+    top: 200px;
+    left: 180px;
 }
 
 .xbox .stick.right {
-    top: 150px;
-    right: 150px;
-}
-
-.xbox .dpad {
-    position: absolute;
-    width: 150px;
-    height: 150px;
     top: 200px;
-    left: 250px;
+    right: 180px;
 }
 
+/* D-pad */
 .xbox .face {
-    background: url(xbox-assets/dpad.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    opacity: 1;
-    width: 50px;
-    height: 50px;
-}
-
-.xbox .face.pressed {
-    opacity: 1;
+    opacity: 0.8;
+    background: rgba(50, 50, 50, 0.7);
+    border: 2px solid #000;
 }
 
 .xbox .face.up {
-    background-position: center;
-    top: 0;
-    left: 50px;
+    top: 280px;
+    left: 380px;
 }
-
 .xbox .face.down {
-    background-position: center;
-    bottom: 0;
-    left: 50px;
+    top: 360px;
+    left: 380px;
 }
-
 .xbox .face.left {
-    background-position: center;
-    top: 50px;
-    left: 0;
+    top: 320px;
+    left: 340px;
 }
-
 .xbox .face.right {
-    background-position: center;
-    top: 50px;
-    right: 0;
+    top: 320px;
+    left: 420px;
 }
 
-.xbox.half {
-    margin-top: 0;
+/* Start/Select buttons */
+.xbox .back, .xbox .start {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    opacity: 0.8;
+    background: rgba(200, 200, 200, 0.7);
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
 }
 
-.xbox {
-    background: no-repeat center;
-    background-size: cover;
+.xbox .back {
+    top: 320px;
+    left: 300px;
 }
+.xbox .back:after { content: "Select"; }
+
+.xbox .start {
+    top: 320px;
+    right: 300px;
+}
+.xbox .start:after { content: "Start"; }
+
+/* Pressed states */
+.xbox .button.pressed,
+.xbox .bumper.pressed,
+.xbox .trigger.pressed,
+.xbox .stick.pressed,
+.xbox .face.pressed,
+.xbox .back.pressed,
+.xbox .start.pressed {
+    opacity: 1;
+    transform: scale(0.9);
+    background: rgba(255, 255, 255, 0.9);
+}
+
 /*END Xbox One Controller Styling*/
