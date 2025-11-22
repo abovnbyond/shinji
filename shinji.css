@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: contain; /* Add this to fit GIF properly */
     background-position: center; /* Add this to center the GIF */
-    position: relative; /* Needed for absolute children positioning */
+    position: absolute; /* Needed for absolute children positioning */
 }
 
 .xbox .triggers {
