@@ -92,7 +92,6 @@
     opacity: 0;
 }
 
-
 .xbox .start {
     background: url(Start.png);
     width: 800px;
@@ -113,7 +112,6 @@
 }
 
 .xbox .start {
-    background-position: 33px 0px;
     float: right;
 }
 
