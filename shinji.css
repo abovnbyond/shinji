@@ -1,71 +1,211 @@
-/*BEGIN Xbox One Controller Styling - Simple Stacking Version*/
-.controller.xbox {
+/*BEGIN xbox shinji Controller Styling*/
+.xbox shinji {
     background: url(evangelionv2.gif);
-    height: 600px;
-    width: 800px;
-    position: relative;
-    margin: 0 auto;
-}
-
-/* All button containers stack perfectly */
-.xbox .triggers,
-.xbox .bumpers,
-.xbox .abxy,
-.xbox .sticks,
-.xbox .dpad,
-.xbox .arrows {
-    position: absolute;
-    width: 800px;
-    height: 600px;
-    top: 0;
-    left: 0;
-}
-
-/* All buttons are full 800x600 images stacked on top */
-.xbox .trigger,
-.xbox .bumper,
-.xbox .button,
-.xbox .stick,
-.xbox .face,
-.xbox .back,
-.xbox .start {
-    position: absolute;
-    width: 800px;
-    height: 600px;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    background-size: cover;
+    height: 800px;
+    width: 600px;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
-/* Individual button images */
-.xbox .trigger.left { background: url(LT.png); }
-.xbox .trigger.right { background: url(RT.png); }
-.xbox .bumper.left { background: url(LB.png); }
-.xbox .bumper.right { background: url(RB.png); }
-.xbox .a { background: url(A.png); }
-.xbox .b { background: url(B.png); }
-.xbox .x { background: url(X.png); }
-.xbox .y { background: url(Y.png); }
-.xbox .stick.left { background: url(LSidle.png); }
-.xbox .stick.right { background: url(RSidle.png); }
-.xbox .face.up { background: url(Up.png); }
-.xbox .face.down { background: url(Down.png); }
-.xbox .face.left { background: url(Left.png); }
-.xbox .face.right { background: url(Right.png); }
-.xbox .back { background: url(Select.png); }
-.xbox .start { background: url(Start.png); }
-
-/* Pressed states */
-.xbox .button.pressed,
-.xbox .bumper.pressed,
-.xbox .trigger.pressed,
-.xbox .stick.pressed,
-.xbox .face.pressed,
-.xbox .back.pressed,
-.xbox .start.pressed {
-    opacity: 0.7;
+.xbox shinji .triggers {
+    position: absolute;
+    background-repeat: no-repeat;
 }
-/*END Xbox One Controller Styling*/
+
+.xbox shinji .trigger {
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .trigger.left {
+    height: 800px;
+    width: 600px;
+    background: url(LT.png);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .trigger.right {
+    height: 800px;
+    width: 600px;
+    background: url(RT.png);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .bumper {
+    opacity: 0;
+}
+
+.xbox shinji .bumper.pressed {
+    opacity: 1;
+}
+
+.xbox shinji .bumper.right {
+    height: 800px;
+    width: 600px;
+    background: url(RB.png);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .bumper.left {
+    height: 800px;
+    width: 600px;
+    background: url(LB.png);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .arrows {
+    position: absolute;
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .back {
+    opacity: 0;
+    position: absolute;
+}
+
+.xbox shinji .start {
+    opacity: 0;
+    position: absolute;
+}
+
+.xbox shinji .back.pressed {
+    height: 800px;
+    width: 600px;
+    background: url(Share.png);
+    position: absolute;
+    opacity: 1;
+}
+
+.xbox shinji .start.pressed {
+    height: 800px;
+    width: 600px;
+    background: url(Options.png);
+    opacity: 1;
+}
+
+.xbox shinji .abxy {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .button {
+    position: absolute;
+}
+
+.xbox shinji .button.pressed {
+    background-position-y: 0px;
+    margin-top: 0px;
+}
+
+.xbox shinji .a.pressed {
+    background: url(A.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .b.pressed {
+    background: url(B.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .x.pressed {
+    background: url(X.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .y.pressed {
+    background: url(Y.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .sticks {
+    left: 200px;
+    top: 240px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .stick {
+    position: absolute;
+}
+
+.xbox shinji .stick.pressed.left {
+    position: absolute;
+    background: url(LS.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .stick.pressed.right {
+    position: absolute;
+    background: url(RS.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .stick.left {
+    position: absolute;
+    background: url(LSidle.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .stick.right {
+    position: absolute;
+    background: url(RSidle.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .dpad {
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .face.right.pressed {
+    background: url(Right.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .face.left.pressed {
+    background: url(Left.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .face.up.pressed {
+    background: url(Up.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+.xbox shinji .face.down.pressed {
+    background: url(Down.png);
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+
+/*END xbox shinji Controller Styling*/
