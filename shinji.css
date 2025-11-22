@@ -146,6 +146,7 @@
 
 .xbox .a {
     position: absolute;
+    background: url(A.png);
     top: 0px;
     left: 0px;
 }
