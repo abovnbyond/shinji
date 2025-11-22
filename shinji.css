@@ -45,11 +45,10 @@
 
 .xbox .bumpers {
     position: absolute;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     left: 0px;
     top: 0px;
-    background-repeat: no-repeat;
 }
 
 .xbox .bumper {
@@ -61,19 +60,17 @@
 }
 
 .xbox .bumper.left {
-    width: 800px;
-    height: 600px;
     background: url(LB.png);
-    position: absolute;
-    background-repeat: no-repeat;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .xbox .bumper.right {
-    width: 800px;
-    height: 600px;
     background: url(RB.png);
-    position: absolute;
-    background-repeat: no-repeat;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .xbox .quadrant {
