@@ -3,7 +3,7 @@
     background: url(evangelionv2.gif);
     width: 800px;
     height: 600px;
-    background : no-repeat;
+    background-repeat : no-repeat;
 }
 
 .xbox .triggers {
